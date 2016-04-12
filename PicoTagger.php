@@ -161,7 +161,7 @@ final class PicoTagger extends AbstractPicoPlugin {
 			if ($spread == 0) $spread = 1; // we don't want to divide by zero
 			
 			// set the font-size increment
-			$step = ((int)$this->tags_max_size - (int)$this->tags_min_size) / ($spread);
+			$step = ($this->tags_max_size - $this->tags_min_size) / ($spread);
 			
 			// set the font-size for each tag
 			foreach ($this->tags_array as $key => $val) {
@@ -247,15 +247,5 @@ final class PicoTagger extends AbstractPicoPlugin {
 			$output = $theString;
 		}
 		return $output;
-	}
-	
-	private static function key_sub_values_intersect($values, $keys) {
-		$key_val_int = [];
-		foreach ($keys as $key => $vals) {
-			foreach($vals as $val) {
-				$key_val_int[$val] = $values[$val];
-			}
-		}
-		return $key_val_int;
 	}
 }
