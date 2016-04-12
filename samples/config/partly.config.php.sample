@@ -1,0 +1,13 @@
+/*
+ * PicoTagger
+ */
+$config['PicoTagger.enabled'] = true;              // default: false;
+$config['widget_mode'] = false;                    // default: false;
+$config['tags_template'] = 'tags.twig';            // default: 'tags.twig';
+$config['tagcloud_template'] = 'tagcloud.twig';    // default: 'tagcloud.twig';
+$config['tags_min_size'] = 12;                     // default: 12;
+$config['tags_max_size'] = 36;                     // default: 24;
+$config['tags_meta_title'] = 'Tagged with: {{ current_tag }}';    // default: 'Tagged with: {{ current_tag }}';
+$config['tags_meta_description'] = 'Pages tagged with: {{ current_tag }}';    // default: 'Pages tagged with: {{ current_tag }}';
+$config['tagcloud_meta_title'] = 'Tag Cloud';      // default: 'Tag Cloud';
+$config['tagcloud_meta_description'] = 'This is the Tag Cloud of this site.';    // default: 'This is the Tag Cloud of this site.';
